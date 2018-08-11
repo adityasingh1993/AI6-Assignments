@@ -11,8 +11,11 @@ def sigmoid(x):
   return (1 / (1 + numpy.exp(-x)))
 
 def tanh(x):
-  # enter code below
+  return((numpy.exp(x)-numpy.exp(-x))/(numpy.exp(x)+numpy.exp(-x)))
   
 def relu(x):
-  # entr code below
+  if x<0:
+    return 0
+  else:
+    return x
   
